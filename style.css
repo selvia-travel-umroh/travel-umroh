@@ -1,0 +1,358 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f4f7f2;
+  color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+  background:#0b5d3b;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.menu{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:gold;
+}
+
+.profile{
+  color:white;
+  font-size:13px;
+  text-align:right;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),
+  url("images/kabah-bg.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-content{
+  color:white;
+  width:70%;
+}
+
+.hero-content h1{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.btn{
+  background:gold;
+  color:black;
+  padding:15px 35px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+  padding:60px 40px;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* PAKET */
+.paket-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.paket-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  position:relative;
+}
+
+.paket-card:hover{
+  transform:translateY(-10px);
+}
+
+.vip{
+  border:3px solid gold;
+}
+
+.badge{
+  position:absolute;
+  top:15px;
+  right:15px;
+
+  background:gold;
+  color:black;
+
+  padding:8px 15px;
+
+  border-radius:20px;
+
+  font-size:11px;
+  font-weight:bold;
+
+  display:inline-block;
+  white-space:nowrap;
+}
+
+.paket-card h1{
+  color:#0b5d3b;
+  margin:15px 0;
+}
+
+.paket-card ul{
+  padding-left:20px;
+}
+
+.paket-card li{
+  margin:10px 0;
+}
+
+/* TABLE */
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+}
+
+th,td{
+  border:1px solid #ddd;
+  padding:15px;
+  text-align:center;
+}
+
+th{
+  background:#0b5d3b;
+  color:white;
+}
+
+/* CARD GRID */
+.fasilitas-grid,
+.tentang-grid,
+.pelayanan-grid,
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.fasilitas-card,
+.tentang-card,
+.pelayanan-card,
+.dash-card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.fasilitas-card:hover,
+.tentang-card:hover,
+.pelayanan-card:hover,
+.dash-card:hover,
+.riwayat-card:hover{
+  transform:translateY(-8px);
+}
+
+.tentang-card h3{
+  color:#0b5d3b;
+  margin-bottom:10px;
+}
+
+/* GALERI */
+.galeri-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.galeri-grid img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.galeri-grid img:hover{
+  transform:scale(1.03);
+}
+
+/* FORM */
+.form-box{
+  background:white;
+  max-width:650px;
+  margin:auto;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.form-box input,
+.form-box select{
+  padding:15px;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+
+.total-box{
+  background:#f1f1f1;
+  padding:15px;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.countdown-box{
+  background:#e8f5e9;
+  padding:15px;
+  border-radius:15px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.countdown-box h3{
+  margin-top:10px;
+  color:#0b5d3b;
+}
+
+.form-box button{
+  background:#0b5d3b;
+  color:white;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.form-box button:hover{
+  background:#09482d;
+}
+
+/* DASHBOARD */
+.dash-card{
+  text-align:center;
+}
+
+.dash-card h1{
+  color:#0b5d3b;
+  margin-top:10px;
+}
+
+/* RIWAYAT */
+#listRiwayat{
+  display:grid;
+  gap:20px;
+}
+
+.riwayat-card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.riwayat-card p{
+  margin:8px 0;
+}
+
+.riwayat-card h4{
+  margin-top:10px;
+  color:#0b5d3b;
+}
+
+.riwayat-card button{
+  margin-top:15px;
+  background:red;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#0b5d3b;
+  color:white;
+  text-align:center;
+  padding:40px;
+}
+
+footer p{
+  margin:10px 0;
+}
